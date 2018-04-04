@@ -1,5 +1,5 @@
 # commandline
-51 Useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+53 Useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -480,6 +480,24 @@ echo "Quoted Values: $*"
 echo "Total Params: $#"
 echo "Last Status: $?"
 echo "Current PID: $$"
+
+```
+
+* ssh-with-alias
+```bash
+#! /bin/bash
+
+touch ~/.ssh/config;
+echo -e "Host ALIAS\n    HostName HOSTADDR\n    User USERNAME" >> ~/.ssh/config; 
+
+```
+
+* ssh-without-password
+```bash
+#! /bin/bash
+
+ssh-keygen -t rsa;
+ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@HOSTADDR;
 
 ```
 
