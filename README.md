@@ -1,5 +1,5 @@
 # commandline
-53 Useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+53 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash

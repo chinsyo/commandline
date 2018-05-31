@@ -27,7 +27,7 @@ def writetoreadme(text):
 def generatetitle(srcs):
     title = "# commandline"
     title += "\n"
-    title += "{} Useful bash scripts collection on Mac OSX.(实用的命令行脚本)".format(len(srcs))
+    title += "{} useful bash scripts collection on Mac OSX.(实用的命令行脚本)".format(len(srcs))
     title += "\n"
     return title
 
