@@ -1,5 +1,5 @@
 # commandline
-54 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+55 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -399,6 +399,16 @@ traceroute ${siteaddr}
 #! /bin/bash
 
 ipconfig getifaddr en0
+
+```
+
+* rvi
+```bash
+#! /bin/bash
+
+rvictl -s $1
+rvictl -l
+rvictl -x $1
 
 ```
 
