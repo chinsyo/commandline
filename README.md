@@ -1,5 +1,5 @@
 # commandline
-55 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+56 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -230,6 +230,14 @@ git log --graph --decorate --pretty=oneline --abbrev-commit --all
 #! /bin/bash
 
 softwareupdate -ia
+
+```
+
+* install_altool
+```bash
+#! /bin/bash
+
+sudo ln -s /Applications/Xcode.app/Contents/Applications/Application\ Loader.app/Contents/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/altool /usr/local/bin/altool
 
 ```
 
