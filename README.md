@@ -474,6 +474,7 @@ export $PATH="/usr/local/bin:$PATH"
 ```bash
 #! /bin/bash
 
+python3 -m http.server
 python -m SimpleHTTPServer
 
 ```
