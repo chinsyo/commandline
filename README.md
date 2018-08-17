@@ -10,7 +10,7 @@ caffeinate -u -t 3600
 
 * background-jobs
 ```bash
-#! /bin/sh
+#! /bin/bash
 
 # Run command background
 sleep 100 &
@@ -96,7 +96,7 @@ sysctl -n machdep.cpu.brand_string
 
 * create-audiobook
 ```bash
-#! /bin/sh
+#! /bin/bash
 
 say -v Alex -f file.txt -o "output.m4a"
 
@@ -156,7 +156,7 @@ say "DNS cache flushed."
 * generate-random-chars
 ![generate-random-chars](img/generate-random-chars.png)
 ```bash
-#! /bin/sh
+#! /bin/bash
 
 jot -r -c 60 a z | rs -g 0 6 | sort | uniq
 
@@ -164,7 +164,7 @@ jot -r -c 60 a z | rs -g 0 6 | sort | uniq
 
 * generate-random-name
 ```bash
-#! /bin/sh
+#! /bin/bash
 
 cat /usr/share/dict/propernames | sort -R | head -n 1
 
@@ -172,7 +172,7 @@ cat /usr/share/dict/propernames | sort -R | head -n 1
 
 * generate-random-password
 ```bash
-#! /bin/sh
+#! /bin/bash
 
 date | md5 | head -c8; echo
 
@@ -302,7 +302,7 @@ printenv
 
 * python-packages-count
 ```bash
-#! /bin/sh
+#! /bin/bash
 
 pip3 list --format=columns | tail +3 | wc -l
 
@@ -481,7 +481,7 @@ python -m SimpleHTTPServer
 * show-dialog
 ![show-dialog](img/show-dialog.png)
 ```bash
-#! /bin/sh
+#! /bin/bash
 
 osascript -e 'tell app "System Events" to display dialog "Hello world!"'
 
@@ -497,7 +497,7 @@ defaults write com.apple.finder AppleShowAllFiles true
 
 * special-variables
 ```bash
-#! /bin/sh
+#! /bin/bash
 
 echo "File Name: $0"
 echo "First Params: $1"
@@ -530,7 +530,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@HOSTADDR;
 
 * talk-content
 ```bash
-#! /bin/sh
+#! /bin/bash
 
 say "Hello world!"
 
@@ -548,7 +548,7 @@ echo -e "\033[31m Result ${hex} copy to the clipboard."
 
 * translate-words-with-dict
 ```bash
-#! /bin/sh
+#! /bin/bash
 
 open dict://$1
 

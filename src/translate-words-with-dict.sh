@@ -1,3 +1,3 @@
-#! /bin/sh
+#! /bin/bash
 
 open dict://$1

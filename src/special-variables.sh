@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 echo "File Name: $0"
 echo "First Params: $1"
