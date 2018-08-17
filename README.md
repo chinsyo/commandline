@@ -1,5 +1,5 @@
 # commandline
-56 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+55 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -133,14 +133,6 @@ killall Finder;
 
 system_profiler SPUSBDataType | sed -n -e '/iPad/,/Serial/p' -e '/iPhone/,/Serial/p'
 
-
-```
-
-* fetch_udid
-```bash
-#! /bin/bash
-
-system_profiler SPUSBDataType | sed -n -e '/iPad/,/Extra/p' -e '/iPhone/,/Extra/p'
 
 ```
 
