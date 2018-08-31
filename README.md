@@ -1,5 +1,5 @@
 # commandline
-55 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+57 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -133,6 +133,14 @@ killall Finder;
 
 system_profiler SPUSBDataType | sed -n -e '/iPad/,/Serial/p' -e '/iPhone/,/Serial/p'
 
+
+```
+
+* find-codesign
+```bash
+#! /bin/bash
+
+security find-identity -v -p codesigning
 
 ```
 
@@ -344,6 +352,14 @@ git remote -v;
 git remote set-url $0 $1; 
 
 git remote -v;
+
+```
+
+* resign-framework
+```bash
+#! /bin/bash
+
+codesign -f -s ${IDENTITY} ${FRAMEWORKPATH}
 
 ```
 
