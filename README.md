@@ -1,5 +1,5 @@
 # commandline
-61 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+62 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -225,6 +225,17 @@ git rebase -i --autosquash ac5db87
 # fixup c5069d5 fixup! Feature A is done
 # fixup c9e138f fixup! Feature A is done
 # pick 733e2ff Feature B is done
+
+```
+
+* git-weekly-report
+![git-weekly-report](img/git-weekly-report.png)
+```bash
+#! /bin/bash
+
+AUTHOR=$(git config --get user.name)
+git log --author="${AUTHOR}" --format="%cd : %s" --since=last.Monday --reverse --no-merges --date=format:'%F %T'
+
 
 ```
 
