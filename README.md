@@ -1,5 +1,5 @@
 # commandline
-59 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+60 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -107,6 +107,17 @@ say -v Alex -f file.txt -o "output.m4a"
 #! /bin/bash
 
 mkfile 10g ~/Desktop/file
+
+```
+
+* csrutil
+```bash
+#! /bin/bash
+
+# in recovery mode
+csrutil disable;
+csrutil enable;
+
 
 ```
 
