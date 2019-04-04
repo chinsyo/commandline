@@ -1,5 +1,5 @@
 # commandline
-58 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+59 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -247,6 +247,15 @@ sudo ln -s /Applications/Xcode.app/Contents/Applications/Application\ Loader.app
 
 # Replace WIFI_SSID and WIFI_PASSWORD with actual
 networksetup -setairportnetwork en0 WIFI_SSID WIFI_PASSWORD
+
+```
+
+* jsonify
+![jsonify](img/jsonify.png)
+```bash
+#! /bin/bash
+
+curl -sS http://httpbin.org/get | python3 -m json.tool
 
 ```
 
