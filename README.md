@@ -1,5 +1,5 @@
 # commandline
-60 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+61 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -126,6 +126,15 @@ csrutil enable;
 #! /bin/bash
 
 airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'
+
+```
+
+* domain-expiration
+```bash
+#! /bin/bash
+
+# output: 2026-10-11T11:05:17Z 
+whois baidu.com | grep Expiry | sed -n "s/Registry Expiry Date://p" || echo "No matching result"
 
 ```
 
