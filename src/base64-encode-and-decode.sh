@@ -1,5 +1,5 @@
 #! /bin/bash
 
-echo -n "hello" | base64
+echo "hello" | tr -d \\n | base64
 
-echo -n "aGVsbG8=" | base64 -D
+echo "aGVsbG8=" | tr -d \\n | base64 -D
