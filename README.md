@@ -1,5 +1,5 @@
 # commandline
-62 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+63 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -540,6 +540,19 @@ export $PATH="/usr/local/bin:$PATH"
 
 python3 -m http.server
 python -m SimpleHTTPServer
+
+```
+
+* shellcode
+![shellcode](img/shellcode.png)
+```bash
+#! /bin/bash
+
+# Heavily inspired by https://www.commandlinefu.com/commands/view/6051/get-all-shellcode-on-binary-file-from-objdump
+# With slightly modify.
+
+objdump -d $1 | grep '[0-9a-f]:' | cut -f2 -d ':' | cut -f1-6 -d ' '|tr -s ' '|
+    tr '\t' ' ' | sed 's/ $//g' | sed 's/ /\\x/g' | paste -s -d '\' - | sed 's/^/"/' | sed 's/$/"/g'
 
 ```
 
