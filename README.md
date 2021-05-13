@@ -305,7 +305,7 @@ defaults write -g KeyRepeat -int 0.02
 last | awk 'NR==1 {print $6}'
 ```
 
-* md5encode
+* md5-digest
 ```bash
 #! /bin/bash
 
