@@ -38,8 +38,9 @@ jobs:
       # Regenerate README.md
       - name: "Regenerate README.md"
         run: python3 $GITHUB_WORKSPACE/.github/scripts/readme.py
-        
-      - name: Commit changes
+      
+      - name: "Commit changes"
+        if: steps.changed_files.outputs.files_changed == 'true'
         run: |
           git config --global user.name 'Chinsyo'
           git config --global user.email 'chinsyo@users.noreply.github.com'
