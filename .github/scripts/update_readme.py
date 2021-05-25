@@ -3,7 +3,7 @@
 from os import getcwd, listdir, remove
 from os.path import isfile, join, splitext
 
-README = "README.md"
+README = join(getcwd(), 'README.md')
 SOURCE_DIR = join(getcwd(), 'source')
 ASSETS_DIR = join(getcwd(), 'assets')
 

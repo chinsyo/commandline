@@ -86,11 +86,11 @@ afconvert input.mp3 rintone.m4r -f m4af
 
 ```
 
-* cpu-brand
+* cpu-vendor
 ```bash
 #! /bin/bash
 
-sysctl -n machdep.cpu.brand_string
+sysctl -n machdep.cpu.vendor
 
 ```
 

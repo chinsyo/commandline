@@ -37,7 +37,7 @@ jobs:
           
       # Regenerate README.md
       - name: "Regenerate README.md"
-        run: python3 $GITHUB_WORKSPACE/.github/scripts/readme.py
+        run: python3 $GITHUB_WORKSPACE/.github/scripts/update_readme.py
       
       - name: "Commit changes"
         if: steps.changed_files.outputs.files_changed == 'true'
