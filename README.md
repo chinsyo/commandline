@@ -258,7 +258,7 @@ git log --graph --decorate --pretty=oneline --abbrev-commit --all
 
 * heap-stat
 ```bash
-#! /bin/sh
+#! /bin/bash
 
 # ref: https://developer.apple.com/videos/play/wwdc2020/10163/
 heap Mail | egrep 'class_rw|COUNT'
