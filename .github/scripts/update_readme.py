@@ -34,17 +34,15 @@ def update_title(srcs):
 def update_content(src, has_img):
     src_name, src_ext = splitext(src)
     img_name, img_ext = src_name, '.png'
-    
-    text = "* {}".format(src_name)
-    text += "\n"
-    text += "![{}]({})\n".format(img_name, join(ASSETS_DIR, img_name + img_ext)) if has_img else ""
+    img_path = join('assets', img_name + img_ext)
+
+    text = "* {}\n".format(src_name)
+    text += "![{}]({})\n".format(img_name, img_path) if has_img else ""
     with open(join(SOURCE_DIR, src), 'r') as f:
-        text += "```bash"
-        text += "\n"
+        text += "```bash\n"
         text += f.read()
         text += "\n"
-        text += "```"
-        text += "\n"
+        text += "```\n"
     text += "\n"
     return text
     
