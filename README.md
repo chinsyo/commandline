@@ -174,7 +174,7 @@ say "DNS cache flushed."
 ```
 
 * generate-random-chars
-![generate-random-chars](/Users/shawn/Developer/commandline/assets/generate-random-chars.png)
+![generate-random-chars](assets/generate-random-chars.png)
 ```bash
 #! /bin/bash
 
@@ -229,7 +229,7 @@ git rebase -i --autosquash ac5db87
 ```
 
 * git-weekly-report
-![git-weekly-report](/Users/shawn/Developer/commandline/assets/git-weekly-report.png)
+![git-weekly-report](assets/git-weekly-report.png)
 ```bash
 #! /bin/bash
 
@@ -248,7 +248,7 @@ find . -name '*.go' | xargs wc -l | sort -nr
 ```
 
 * graphic-git-logs
-![graphic-git-logs](/Users/shawn/Developer/commandline/assets/graphic-git-logs.png)
+![graphic-git-logs](assets/graphic-git-logs.png)
 ```bash
 #! /bin/bash
 
@@ -291,7 +291,7 @@ networksetup -setairportnetwork en0 WIFI_SSID WIFI_PASSWORD
 ```
 
 * jsonify
-![jsonify](/Users/shawn/Developer/commandline/assets/jsonify.png)
+![jsonify](assets/jsonify.png)
 ```bash
 #! /bin/bash
 
@@ -543,7 +543,7 @@ export $PATH="/usr/local/bin:$PATH"
 ```
 
 * share-file-via-http-server
-![share-file-via-http-server](/Users/shawn/Developer/commandline/assets/share-file-via-http-server.png)
+![share-file-via-http-server](assets/share-file-via-http-server.png)
 ```bash
 #! /bin/bash
 
@@ -553,7 +553,7 @@ python -m SimpleHTTPServer
 ```
 
 * shellcode
-![shellcode](/Users/shawn/Developer/commandline/assets/shellcode.png)
+![shellcode](assets/shellcode.png)
 ```bash
 #! /bin/bash
 
@@ -565,7 +565,7 @@ objdump -d $1 | grep '[0-9a-f]:' | cut -f2 -d ':' | cut -f1-6 -d ' ' | tr -s ' '
 ```
 
 * show-dialog
-![show-dialog](/Users/shawn/Developer/commandline/assets/show-dialog.png)
+![show-dialog](assets/show-dialog.png)
 ```bash
 #! /bin/bash
 
