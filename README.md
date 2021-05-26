@@ -344,7 +344,8 @@ history | awk '{CMD[$2]++;count++;} END { for (a in CMD )print CMD[a] " " CMD[a]
 #! /bin/bash
 
 echo "starting upgrade pip packages..."
-pip3 list --outdated --format=freeze | grep -v "^\-e" | cut -d = -f 1 | xargs -n1 pip3 install --upgrade;
+python3 -m pip list --outdated --format=freeze | grep -v "^\-e" | cut -d = -f 1
+| xargs -n1 python3 -m pip install -U
 
 echo "finished upgrade pip packages..."
 
