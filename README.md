@@ -1,5 +1,5 @@
 # commandline
-66 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+67 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -336,6 +336,14 @@ md5 -xs "Hello world!"
 #! /bin/bash
 
 history | awk '{CMD[$2]++;count++;} END { for (a in CMD )print CMD[a] " " CMD[a]/count*100 "% " a }' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl | head -n10
+
+```
+
+* netstat
+```bash
+#! /bin/bash
+
+netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
 
 ```
 
