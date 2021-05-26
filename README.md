@@ -1,5 +1,5 @@
 # commandline
-64 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+65 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -126,6 +126,15 @@ csrutil enable;
 #! /bin/bash
 
 airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'
+
+```
+
+* cxxfilt
+```bash
+#! /bin/bash
+
+# C++ name demangling
+c++filt __Z4mainiPPc
 
 ```
 

@@ -25,10 +25,8 @@ def write_to_readme(text):
         f.write(text)
 
 def update_title(srcs):
-    title = "# commandline"
-    title += "\n"
-    title += "{} useful bash scripts collection on Mac OSX.(实用的命令行脚本)".format(len(srcs))
-    title += "\n"
+    title = "# commandline\n"
+    title += "{} useful bash scripts collection on Mac OSX.(实用的命令行脚本)\n".format(len(srcs))
     return title
 
 def update_content(src, has_img):
