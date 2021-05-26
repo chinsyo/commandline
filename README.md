@@ -1,5 +1,5 @@
 # commandline
-65 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+66 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -647,6 +647,15 @@ echo -e "\033[31m Result ${hex} copy to the clipboard."
 #! /bin/bash
 
 open dict://$1
+
+```
+
+* zprint
+```bash
+#! /bin/bash
+
+# Show information about kernel zones
+sudo zprint
 
 ```
 
