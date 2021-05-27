@@ -1,5 +1,5 @@
 # commandline
-67 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+68 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -51,6 +51,14 @@ echo "aGVsbG8=" | tr -d \\n | base64 -D
 #! /bin/bash
 
 seq -w -f "content%g" 10000 10 11000 | xargs touch
+
+```
+
+* big-sur-startup-disk
+```bash
+#! /bin/bash
+
+sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
 
 ```
 
