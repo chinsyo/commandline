@@ -186,7 +186,7 @@ security find-identity -v -p codesigning
 ```bash
 #! /bin/bash
 
-sudo killall -HUP mDNSResponder && say "DNS cache flushed."
+sudo dscacheutil -flushcache && killall -HUP mDNSResponder && say "DNS cache flushed."
 
 ```
 
