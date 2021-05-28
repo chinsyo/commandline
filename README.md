@@ -1,5 +1,5 @@
 # commandline
-68 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+69 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -279,6 +279,15 @@ git log --graph --decorate --pretty=oneline --abbrev-commit --all
 
 # ref: https://developer.apple.com/videos/play/wwdc2020/10163/
 heap Mail | egrep 'class_rw|COUNT'
+
+```
+
+* hidden-desktop
+```bash
+#! /bin/bash
+
+# chflags nohidden ~/Desktop 
+chflags hidden ~/Desktop/*
 
 ```
 
