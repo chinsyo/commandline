@@ -1,5 +1,6 @@
 # commandline
 70 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+![](https://github.com/chinsyo/commandline/actions/workflows/update_readme.yml/badge.svg)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
