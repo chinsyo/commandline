@@ -27,6 +27,7 @@ def write_to_readme(text):
 def update_title(srcs):
     title = "# commandline\n"
     title += "{} useful bash scripts collection on Mac OSX.(实用的命令行脚本)\n".format(len(srcs))
+    title += "![](https://github.com/chinsyo/commandline/actions/workflows/update_readme.yml/badge.svg)\n"
     return title
 
 def update_content(src, has_img):
