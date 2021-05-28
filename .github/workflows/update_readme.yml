@@ -27,8 +27,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        # with:
-        #   fetch-depth: 0
+        with:
+          fetch-depth: 2
 
       # Runs a single command using the runners shell
       - name: Setup Python3
@@ -41,7 +41,6 @@ jobs:
       - name: "Regenerate README.md"
         run: |
           python3 $GITHUB_WORKSPACE/.github/scripts/update_readme.py
-          git status
 
       - name: "Check if file changed"
         id: files-changed
