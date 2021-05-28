@@ -1,5 +1,5 @@
 # commandline
-69 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+70 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 * avoid-mac-sleeping
 ```bash
 #! /bin/bash
@@ -533,6 +533,16 @@ rvictl -x $1
 #! /bin/bash
 
 airport -s
+
+```
+
+* schedule-poweron
+```bash
+#! /bin/bash
+
+# sudo pmset repeat cancel
+sudo pmset repeat wakeorpoweron  MTWRF 9:00:00 shutdown MTWRFSU 18:30:00
+
 
 ```
 
