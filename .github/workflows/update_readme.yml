@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     strategy:
       matrix:
         python-version: [ '3.x' ]
@@ -41,13 +41,12 @@ jobs:
       - name: "Regenerate README.md"
         run: python3 $GITHUB_WORKSPACE/.github/scripts/update_readme.py
 
-      # This step will evaluate the repo status and report the change
-      - name: Check if there are changes
-        id: changed-files
-        uses: tj-actions/changed-files@v6.3
+      - name: "Check if file changed"
+        id: files-changed
+        run: git diff-index --ignore-submodules --quiet HEAD -- README.md || echo "::set-output name=changed::true"
 
       - name: "Commit changes"
-        if: contains(steps.changed-files.outputs.modified_files, 'README.md')
+        if: ${{ steps.files-changed.outputs.changed == 'true' }}
         run: |
           git config --global user.name 'Chinsyo'
           git config --global user.email 'chinsyo@users.noreply.github.com'
