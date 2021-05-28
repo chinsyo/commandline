@@ -49,6 +49,7 @@ jobs:
         if: ${{ steps.files-changed.outputs.changed == 'true' }}
         run: |
           echo "::debug::${{ steps.files-changed.outputs.changed }}"
+          echo "::debug::$(git diff-index --ignore-submodules HEAD -- README.md)"
           git config --global user.name 'Chinsyo'
           git config --global user.email 'chinsyo@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.ACTIONSSECRET }}@github.com/$GITHUB_REPOSITORY
