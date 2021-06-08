@@ -1,5 +1,5 @@
 # commandline
-70 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+71 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 ![](https://github.com/chinsyo/commandline/actions/workflows/update_readme.yml/badge.svg)
 * altool-install
 ```bash
@@ -338,6 +338,14 @@ defaults write -g KeyRepeat -int 0.02
 #! /bin/bash
 
 last | awk 'NR==1 {print $6}'
+```
+
+* launch-xcode-editor
+```bash
+#! /bin/bash
+
+xed -x
+
 ```
 
 * md5-digest
