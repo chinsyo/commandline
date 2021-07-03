@@ -1,6 +1,13 @@
 # commandline
-71 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+72 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 ![](https://github.com/chinsyo/commandline/actions/workflows/update_readme.yml/badge.svg)
+* adb-bulk-uninstall
+```bash
+#! /bin/bash
+
+adb shell "pm list packages -3 | cut -c9- | xargs -r -n1 -t pm uninstall"
+```
+
 * altool-install
 ```bash
 #! /bin/bash
