@@ -1,5 +1,5 @@
 # commandline
-72 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+73 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 ![](https://github.com/chinsyo/commandline/actions/workflows/update_readme.yml/badge.svg)
 * adb-bulk-uninstall
 ```bash
@@ -159,6 +159,14 @@ airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'
 
 # C++ name demangling
 c++filt __Z4mainiPPc
+
+```
+
+* display-shared-libraries
+```bash
+#! /usr/bin/bash
+
+otool -L /System/Applications/Dictionary.app/Contents/MacOS/Dictionary
 
 ```
 
