@@ -1,5 +1,5 @@
 # commandline
-73 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+74 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 ![](https://github.com/chinsyo/commandline/actions/workflows/update_readme.yml/badge.svg)
 * adb-bulk-uninstall
 ```bash
@@ -265,6 +265,15 @@ git rebase -i --autosquash ac5db87
 # fixup c5069d5 fixup! Feature A is done
 # fixup c9e138f fixup! Feature A is done
 # pick 733e2ff Feature B is done
+
+```
+
+* git-reset-hard-recovery
+```bash
+#! /bin/bash
+# reference: https://stackoverflow.com/questions/5788037/recover-from-git-reset-hard
+
+git fsck --lost-found
 
 ```
 
