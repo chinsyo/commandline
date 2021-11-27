@@ -1,5 +1,5 @@
 # commandline
-75 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
+76 useful bash scripts collection on Mac OSX.(实用的命令行脚本)
 ![](https://github.com/chinsyo/commandline/actions/workflows/update_readme.yml/badge.svg)
 * adb-bulk-uninstall
 ```bash
@@ -700,6 +700,21 @@ echo -e "Host ALIAS\n    HostName HOSTADDR\n    User USERNAME" >> ~/.ssh/config;
 
 ssh-keygen -t rsa;
 ssh-copy-id -i ~/.ssh/id_rsa.pub USERNAME@HOSTADDR;
+
+```
+
+* systab
+```bash
+#!/bin/bash
+
+
+# Copy from https://github.com/hollance/neural-engine/blob/master/docs/is-model-using-ane.md
+
+image list IMAGE_NAME
+
+# This prints the path to the IMAGE_NAME framework, something like this (it will be different on your machine):
+
+image dump systab 'put-the-path-here'
 
 ```
 
